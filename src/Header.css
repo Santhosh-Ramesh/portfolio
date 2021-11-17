@@ -1,0 +1,117 @@
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  height: 100px;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+li > a:active {
+  color: red;
+}
+
+.menu-list {
+  display: flex;
+  float: right;
+}
+
+li {
+  margin: 10px 35px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+li a > p:hover {
+  color: red;
+}
+
+.active {
+  border-bottom: 2px solid red;
+  width: fit-content;
+  color: black;
+  scroll-behavior: smooth;
+}
+a > p {
+  padding: 5px 0;
+  margin: 0;
+  color: rgb(148, 148, 148);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.8em;
+}
+#home,#services,#testimonials,#contact{
+    scroll-behavior: smooth;
+}
+
+.menu-icon{
+  display: none;
+}
+
+/* mobile devices */
+@media screen and (max-width: 700px){
+  .menu-icon{
+    display: block;
+    right: 0;
+    padding-right: 10px;
+  }
+  .menu-icon .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-icon .ham{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+ 
+  .menu-600{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .menu-list{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #fbfafa;
+    top: 80px;
+    transition: all 0.5s ease-in-out;
+    font-size: 2rem;
+  }
+  .header{
+    height: 80px;
+  }
+  .menu-list.close{
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+  a > p {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.8em;
+  }
+  
+}
+
+
+/* tablet devices
+@media screen and # Tablet
+only screen and (min-width: 768px)  {
+  
+} */

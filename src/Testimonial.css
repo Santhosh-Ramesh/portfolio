@@ -1,0 +1,150 @@
+.testimonials {
+  height: 700px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-content > p {
+  color: #333;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3.125rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial-content > h1 {
+  color: #f75958;
+  font-size: 50px;
+  line-height: 57px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+/* .testimonial-words {
+  width: 800px;
+  padding: 0 100px;
+  margin: 0 auto;
+} */
+.testimonial-words > span {
+  text-align: center;
+  width: 30%;
+  font-style: italic;
+  margin-top: 0 px;
+  margin-bottom: 15 px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.testimonial-wordsby > h4 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  margin-top: 10 px;
+  margin-bottom: 10 px;
+}
+
+.testimonial-wordsby > span{
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-size: 1.125rem;
+}
+
+#icon {
+  margin: 50px 0;
+}
+
+#icon > i {
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  line-height: 6rem;
+}
+
+/* only for mobile devices */
+@media only screen and (max-width: 700px) {
+  .testimonials {
+    height: 1000px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+
+  .testimonial-content > p {
+    color: #333;
+    font-size: 55px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 4.125rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .testimonial-content > h1 {
+    color: #f75958;
+    font-size: 80px;
+    line-height: 57px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .testimonial-words {
+    width: 800px;
+    padding: 0 100px;
+    margin: 0 auto;
+  }
+
+  .testimonial-words > span {
+    text-align: center;
+    width: 800px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75rem;
+    font-size: 2.2rem;
+    color: #333;
+    padding: 50px;
+  }
+  .testimonial-wordsby > h4 {
+    font-weight: 600;
+    font-size: 2.125rem;
+    line-height: 2.25rem;
+    margin-top: 10 px;
+    margin-bottom: 10 px;
+  }
+  
+  .testimonial-wordsby > span{
+    font-weight: 400;
+    line-height: 2.25rem;
+    font-size: 2.125rem;
+  }
+  
+  #icon {
+    margin: 50px 0;
+  }
+
+  #icon > i {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    line-height: 6rem;
+  }
+}

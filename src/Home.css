@@ -1,0 +1,354 @@
+.home {
+  padding-top: 100px;
+}
+.home-layout1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfafa;
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+}
+
+.content {
+  padding: 100px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 600px;
+  margin: 0 auto;
+}
+.image > img {
+  width: 80%;
+}
+.content > #name {
+  color: #333;
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  color: #333;
+  line-height: 3.25rem;
+  margin-top: 0px;
+}
+
+.content > #posting {
+  color: #f75958;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.content > #about-content {
+  color: #333;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 350;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  font-size: 1.05rem;
+  padding: 0 10px;
+}
+
+.content > #message {
+  padding: 10px;
+}
+
+.home-layout2 {
+  height: 1020px;
+  background-color: #f3f3f3;
+}
+
+.box-container1 {
+  height: 520px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 200px 0 200px;
+}
+
+.social-media-image {
+  width: 41.66667%;
+}
+
+.social-media-image > img {
+  height: 75%;
+}
+
+.personal-info {
+  padding: 0 50px;
+}
+
+.about-me_subtitle {
+  color: #f75958;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin: 0 0 20 px;
+  text-transform: uppercase;
+  margin: 30px;
+  padding: 0;
+}
+
+.about-me_title {
+  color: #333;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  margin-left: 30px;
+}
+.personal-info > p {
+  /* color: #6e7373; */
+  line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  font-size: 1rem;
+  margin-left: 30px;
+}
+hr {
+  width: 95%;
+}
+
+.about_me_contact_info {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+}
+.about_me_contact_info > div > span {
+  color: #333;
+  text-size-adjust: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  text-align: left;
+}
+.about_me_contact_info > div > p {
+  color: #333;
+  margin-top: 0;
+  line-height: 1.8;
+}
+
+.download_cv {
+  background-color: #f75958;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.download_cv > a {
+  text-decoration: none;
+  color: white;
+}
+
+.box-container2 {
+  height: 1000px;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  margin: 0 auto;
+}
+
+#box1,
+#box2,
+#box3,
+#box4 {
+  border: 5 px solid #fff;
+  border-radius: 5px;
+  width: 15%;
+  height: 100px;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+}
+
+#counter {
+  font-size: 2.25rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#counter-text {
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* only for mobile devices */
+@media only screen and (max-width: 700px) {
+  .home-layout1 {
+    display: block;
+    width: 1200px;
+    height: 1000px;
+    background-color: #fbfafa;
+  }
+  .content {
+    margin: 0 !important;
+    width: fit-content;
+    padding: 50px;
+  }
+
+  .content > #name {
+    color: #333;
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 3.25rem;
+    margin-top: 0px;
+    padding: 0 10px;
+  }
+
+  .content > #posting {
+    color: #f75958;
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+
+  .content > #about-content {
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 350;
+    letter-spacing: 0;
+    line-height: 2.75rem;
+    font-size: 2.05rem;
+    padding: 0 10px;
+  }
+
+  .message_send {
+    width: 300px;
+    height: 50px;
+    font-size: 1.3rem !important;
+  }
+
+  /* new one doing */
+
+  .home-layout2 {
+    height: 3500px;
+    width: 1200px;
+    background-color: #f3f3f3;
+  }
+
+  .box-container1 {
+    height: 2050px;
+    display: block;
+    padding: 50px 100px 0 100px;
+  }
+
+  .social-media-image {
+    width: 41.66667%;
+  }
+
+  .social-media-image > img {
+    height: fit-content;
+  }
+
+  .personal-info {
+    padding: 0 50px;
+  }
+
+  .about-me_subtitle {
+    color: #f75958;
+    font-size: 3.75rem;
+    line-height: 2.5rem;
+    margin: 0 0 20 px;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 0;
+  }
+
+  .about-me_title {
+    color: #333;
+    font-size: 3rem;
+    line-height: 2.375rem;
+    margin-left: 30px;
+  }
+  .personal-info > p {
+    /* color: #6e7373; */
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.75rem;
+    font-size: 2rem;
+    margin-left: 30px;
+  }
+  hr {
+    width: 95%;
+  }
+
+  .about_me_contact_info {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+  }
+  .about_me_contact_info > div > span {
+    color: #333;
+    text-size-adjust: 100%;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+  .about_me_contact_info > div > p {
+    color: #333;
+    margin-top: 0;
+    line-height: 2.8;
+    font-size: 2rem;
+  }
+
+  .download_cv {
+    background-color: #f75958;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 2.4rem;
+  }
+
+  .download_cv > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .box-container2 {
+    height: 1200px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    border: 5 px solid #fff;
+    border-radius: 5px;
+    width: 80%;
+    height: 200px;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: auto 0;
+  }
+
+  #counter {
+    font-size: 5.25rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #counter-text {
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}

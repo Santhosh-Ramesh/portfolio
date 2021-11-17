@@ -1,0 +1,45 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.return_to_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f75958;
+    width: 50px;
+    height: 50px;
+    line-height: 3.125rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 99;
+    text-align: center;
+  }
+
+  .return_button{
+    font-size: 2.4rem !important;
+    padding-top: 5px !important;
+    color: white !important;
+    scroll-behavior: smooth;
+  }
+
+
+  /* only for mobile devices */
+@media only screen and (max-width: 700px) {
+    .return_to_top{
+        width: 80px;
+        height: 80px;
+    }
+
+    .return_button{
+        font-size: 3.4rem !important;
+        padding-top: 10px !important;
+        color: white !important;
+        scroll-behavior: smooth;
+      }
+}
