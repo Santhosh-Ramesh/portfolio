@@ -12,7 +12,9 @@ function Header(props) {
   return (
     <div className="header">
       <div className="menu-600">
-        <div className="logo">Thapreel Alam</div>
+        <div className="logo">
+          <img src="https://bevouliin.com/wp-content/uploads/2014/02/rocket-booster-logo-template-bevouliin-preview.png" alt="rocket" />
+          </div>
         {/* hamburger menu start */}
         <div className="menu-icon" onClick={handleClick}>
           {clicked ? (

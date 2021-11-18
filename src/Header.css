@@ -8,7 +8,13 @@ html{
   top: 0;
   width: 100%;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
 }
+.logo>img{
+  width: 100px;
+}
+
 
 .menu-list {
   margin: 0;
@@ -22,6 +28,8 @@ li > a:active {
 .menu-list {
   display: flex;
   float: right;
+  width: 800px;
+  margin-top: 10px;
 }
 
 li {
@@ -67,7 +75,8 @@ a > p {
   .menu-icon{
     display: block;
     right: 0;
-    padding-right: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
   .menu-icon .fa-times{
     transform: rotate(360deg);
@@ -89,12 +98,13 @@ a > p {
     position: absolute;
     width: 100%;
     background-color: #fbfafa;
-    top: 80px;
+    top: 120px;
     transition: all 0.5s ease-in-out;
     font-size: 2rem;
   }
   .header{
-    height: 80px;
+    height: 140px;
+    display: block;
   }
   .menu-list.close{
     right: -100%;

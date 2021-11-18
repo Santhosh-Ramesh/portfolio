@@ -10,12 +10,12 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import useScrollPosition from '@react-hook/window-scroll';
 import { useEffect, useState } from 'react';
 function App() {
-  
+  const scrollY = useScrollPosition(60 /*fps*/);
   console.log('window.scrollY', window.scrollY);
 
   const [scrollState, setScrollState] = useState(0);
   useEffect(() => {
-    const scrollY = useScrollPosition(60 /*fps*/);
+    
     if (window.scrollY > 301) {
       setScrollState(window.scrollY);
     } else {
