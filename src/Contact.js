@@ -28,7 +28,7 @@ function Contact(props) {
           <p>Get In Touch</p>
           <h1>Contact Me</h1>
         </div>
-        <Contact_Form/>
+        <Form/>
       </div>
     </div>
   );
