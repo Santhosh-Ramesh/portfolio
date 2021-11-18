@@ -2,8 +2,8 @@ import React from 'react';
 import LanguageIcon from '@mui/icons-material/Language';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import './Contact_Form.css';
-function Contact_Form(props) {
+import './Form.css';
+function Form(props) {
   const handleInputChange = () => {};
   const onSubmit = () => {};
   return (
@@ -90,4 +90,4 @@ function Contact_Form(props) {
   );
 }
 
-export default Contact_Form;
+export default Form;

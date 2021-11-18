@@ -1,11 +1,11 @@
 import './App.css';
 import Home from './Home';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import Services from './Services';
-import Skills from './Skills';
+import Header from './Header.js';
+import Services from './Services.js';
+import Skills from './Skills.js';
 import Testimonial from './Testimonial';
-import Contact from './Contact';
+import Contact from './Contact.js';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import useScrollPosition from '@react-hook/window-scroll';
 import { useEffect, useState } from 'react';
