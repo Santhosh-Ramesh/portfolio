@@ -11,25 +11,24 @@ import useScrollPosition from '@react-hook/window-scroll';
 import { useEffect, useState } from 'react';
 function App() {
   const scrollY = useScrollPosition(60 /*fps*/);
-  console.log('window.scrollY', window.scrollY);
+  console.log('window.scrollY',scrollY);
 
   const [scrollState, setScrollState] = useState(0);
   useEffect(() => {
-    
-    if (window.scrollY > 301) {
-      setScrollState(window.scrollY);
+    if (scrollY > 301) {
+      setScrollState(scrollY);
     } else {
       setScrollState(0);
     }
-  }, [window.scrollY > 400 && window.scrollY < 410]);
+  }, [scrollY > 400]);
 
   useEffect(() => {
-    if (window.scrollY > 301) {
-      setScrollState(window.scrollY);
+    if (scrollY > 301) {
+      setScrollState(scrollY);
     } else {
       setScrollState(0);
     }
-  }, [window.scrollY < 400]);
+  }, [scrollY < 400]);
 
   return (
     <div className="App">

@@ -13,7 +13,7 @@ function Header(props) {
     <div className="header">
       <div className="menu-600">
         <div className="logo">
-          <img src="https://bevouliin.com/wp-content/uploads/2014/02/rocket-booster-logo-template-bevouliin-preview.png" alt="rocket" />
+          <img src="https://bevouliin.com/wp-content/uploads/2014/02/rocket-booster-logo-template-bevouliin-preview.png" alt="rocket-lane" />
           </div>
         {/* hamburger menu start */}
         <div className="menu-icon" onClick={handleClick}>
