@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import Contact_form from './Contact_form'
+import Contact_Form from './Contact_Form'
 function Contact(props) {
   return (
     <div id="contact">

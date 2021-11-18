@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Button from '@mui/material/Button';
-import AnimatedNumber from 'animated-number-react';
+// import AnimatedNumber from 'animated-number-react';
 import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import CountUp from 'react-countup';
@@ -47,14 +47,14 @@ function Home(props) {
             </div>
           </div>
           <div className="image">
-            <img src="http://thapreel.com/wp-content/uploads/2021/10/cropped-Thapreel_Alam-removebg.png" />
+            <img src="http://thapreel.com/wp-content/uploads/2021/10/cropped-Thapreel_Alam-removebg.png" alt="Main-picture"/>
           </div>
         </div>
 
         <div className="home-layout2">
           <div className="box-container1">
             <div className="social-media-image">
-              <img src="http://thapreel.com/wp-content/uploads/2021/10/InShot_20211016_201444538-min-890x1024.jpg" />
+              <img src="http://thapreel.com/wp-content/uploads/2021/10/InShot_20211016_201444538-min-890x1024.jpg" alt='Custom picture'/>
             </div>
             <div className="personal-info">
               <h5 className="about-me_subtitle">HELLO!</h5>
