@@ -5,11 +5,13 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import './Form.css';
 function Form(props) {
   const handleInputChange = () => {};
-  const onSubmit = () => {};
+  const handleSubmit = (e) => {e.preventDefault();};
   return (
     <div className="contacts">
       <div className="contact-form">
-        <form>
+        <form 
+        onSubmit={handleSubmit}
+        >
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -48,7 +50,7 @@ function Form(props) {
           />
           <br />
           <br />
-          <input type="submit" value="Send" onClick={onSubmit} />
+          <input type="submit" value="Send"/>
         </form>
       </div>
       <div className="contact-me">
