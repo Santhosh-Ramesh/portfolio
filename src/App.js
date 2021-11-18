@@ -15,20 +15,12 @@ function App() {
 
   const [scrollState, setScrollState] = useState(0);
   useEffect(() => {
-    if (scrollY > 301) {
+    if (scrollY > 400) {
       setScrollState(scrollY);
     } else {
       setScrollState(0);
     }
-  }, [scrollY > 400]);
-
-  useEffect(() => {
-    if (scrollY > 301) {
-      setScrollState(scrollY);
-    } else {
-      setScrollState(0);
-    }
-  }, [scrollY < 400]);
+  }, [scrollY]);
 
   return (
     <div className="App">
