@@ -70,8 +70,81 @@ a > p {
   display: none;
 }
 
-/* mobile devices */
-@media screen and (max-width: 700px){
+/* resolution 1280px */
+@media screen and (max-width: 1280px) {
+  .header {
+    height: 80px;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 80;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo>img{
+    width: 80px;
+  }
+  
+  
+  .menu-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li > a:active {
+    color: red;
+  }
+  
+  .menu-list {
+    display: flex;
+    float: right;
+    width: 700px;
+    margin-top: 10px;
+  }
+  
+  li {
+    margin: 10px 35px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  li a {
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+  }
+  li a > p:hover {
+    color: red;
+  }
+  
+  .active {
+    border-bottom: 2px solid red;
+    width: fit-content;
+    color: black;
+    scroll-behavior: smooth;
+  }
+  a > p {
+    padding: 5px 0;
+    margin: 0;
+    color: rgb(148, 148, 148);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.8em;
+  }
+  #home,#services,#testimonials,#contact{
+      scroll-behavior: smooth;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+}
+
+/* 900px it may support to mobile/tab devices */
+@media screen and (max-width: 900px){
   .menu-icon{
     display: block;
     right: 0;

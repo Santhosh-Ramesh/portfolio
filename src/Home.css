@@ -176,8 +176,194 @@ hr {
   text-align: center;
 }
 
-/* only for mobile devices */
-@media only screen and (max-width: 700px) {
+
+/* only for 1280px resolution */
+@media only screen and (max-width: 1280px) {
+  .home {
+    padding-top: 80px;
+  }
+  .home-layout1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbfafa;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .content {
+    padding: 100px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .image {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .image > img {
+    width: 80%;
+  }
+  .content > #name {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 3.25rem;
+    margin-top: 0px;
+  }
+  
+  .content > #posting {
+    color: #f75958;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+  
+  .content > #about-content {
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 350;
+    letter-spacing: 0;
+    line-height: 1.50rem;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .content > #message {
+    padding: 10px;
+  }
+  .message_send {
+    font-size: 0.8rem !important;
+  }
+  
+  .home-layout2 {
+    height: 930px;
+    background-color: #f3f3f3;
+  }
+  
+  .box-container1 {
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px 0 100px
+  }
+  
+  .social-media-image {
+    width: 40%;
+  }
+  
+  .social-media-image > img {
+    height: 75%;
+  }
+  
+  .personal-info {
+    padding: 0 50px;
+  }
+  
+  .about-me_subtitle {
+    color: #f75958;
+    font-size: 1.7rem;
+    line-height: 1.25rem;
+    margin: 0 0 20 px;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 0;
+  }
+  
+  .about-me_title {
+    color: #333;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-left: 30px;
+  }
+  .personal-info > p {
+    /* color: #6e7373; */
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+  hr {
+    width: 95%;
+  }
+  
+  .about_me_contact_info {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+  }
+  .about_me_contact_info > div > span {
+    color: #333;
+    text-size-adjust: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-align: left;
+  }
+  .about_me_contact_info > div > p {
+    color: #333;
+    margin-top: 0;
+    line-height: 1.8;
+  }
+  
+  .download_cv {
+    background-color: #f75958;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  .download_cv > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .box-container2 {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    border: 5 px solid #fff;
+    border-radius: 5px;
+    width: 15%;
+    height: 100px;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+  }
+  
+  #counter {
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #counter-text {
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+
+/* only for 900px but can support mobile/tab devices too*/
+@media only screen and (max-width: 900px) {
   .home-layout1 {
     display: block;
     width: 1200px;

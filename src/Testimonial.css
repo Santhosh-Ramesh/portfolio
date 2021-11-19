@@ -70,9 +70,50 @@
   border-radius: 100px;
   line-height: 6rem;
 }
+/* only for 1280px resolution */
+@media only screen and (max-width: 1280px) {
+  .testimonials {
+    height: 600px;
+    width: 50%;
+    margin: 0 auto;
+  }
 
+  .testimonial-content > p {
+    color: #333;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3.125rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .testimonial-content > h1 {
+    color: #f75958;
+    font-size: 45px;
+    line-height: 57px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .testimonial-words > span {
+    font-size: 1rem;
+ 
+  }
+
+  
+  #icon {
+    margin: 50px 0;
+  }
+  
+  #icon > i {
+    height: 80px;
+    width: 80px;
+    line-height: 5rem;
+    font-size: 20px !important;
+  }
+}
 /* only for mobile devices */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .testimonials {
     height: 1000px;
     width: 1200px;

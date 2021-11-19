@@ -91,10 +91,114 @@ label{
     font-size: 1.2rem;
     
 }
+/* only for 1280 devices */
+@media only screen and (max-width: 1280px) {
+    .contacts{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form{
+        display: block;
+        margin-right: 100px;
+        width: 500px;
+    }
+    
+    form{
+        margin: auto;
+        padding: 15px;
+        /* max-width: 400px; */
+        align-content: center;
+    }
+    input[type="text"],
+    textarea,
+    input[type="email"],
+    select{
+        width: 450px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #f8fafb;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        padding: 7px;
+        font-size: 1rem;
+        font-family: montserrat,sans-serif;
+        font-weight: 300;
+    }
+    
+    input[type="submit"]{
+        width: 60px;
+        background-color: #f75958;
+        color: white;
+        padding: 11px 9px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: montserrat,sans-serif;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        height: 170px;
+    }
+    
+    input[type="submit"]:hover{
+        background-color:#000000;
+    }
+    
+    label{
+        font-size: 1.3rem;
+        color: #333;
+        font-weight: 400;
+        font-family: montserrat,sans-serif;
+    }
+    
+    
+    .contact-me{
+        padding: 10px;
+        width: 400px;
+    }
+    .contact-me > h5{
+        font-family: montserrat,sans-serif;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .contact-me_info{
+        padding: 10px;
+        
+    }
+    
+    .contact-me_item > p{
+        font-size: 1rem;
+        color: #333;
+        font-weight: 400;
+        font-family: montserrat,sans-serif;
+    }
+    .contact-me_item > i{
+        display: flex;
+        font-size: 1rem;
+        
+    }
+    i >.phone{
+        font-size: 1.1rem;
+    }
+    i >.email{
+        font-size: 1.1rem;
+    }
+    i >.website{
+        font-size: 1.1rem;
+    }
+}
 
 
-/* only for mobile devices */
-@media only screen and (max-width: 700px) {
+/* only for 900px devices may support to mobile and tab too*/
+@media only screen and (max-width: 900px) {
     .contacts{
         height: 1800px;
         display: block;
