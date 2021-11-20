@@ -9,6 +9,8 @@ import Contact from './Contact.js';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import useScrollPosition from '@react-hook/window-scroll';
 import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const scrollY = useScrollPosition(60 /*fps*/);
   console.log('window.scrollY',scrollY);
@@ -26,6 +28,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <ToastContainer position="top-center" className="toaster_message"/>
       <Services />
 
       <Skills />
