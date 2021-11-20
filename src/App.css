@@ -34,6 +34,8 @@ html{
     .return_to_top{
         width: 40px;
         height: 40px;
+        bottom: 50px;
+        right: 50px;
     }
 
     .return_button{
@@ -50,6 +52,8 @@ html{
     .return_to_top{
         width: 80px;
         height: 80px;
+        bottom: 50px;
+        right: 50px;
     }
 
     .return_button{
@@ -65,11 +69,13 @@ html{
     .return_to_top{
         width: 100px;
         height: 100px;
+        bottom: 50px;
+        right: 50px;
     }
 
     .return_button{
         font-size: 5.4rem !important;
-        padding-top: 6px !important;
+        padding-top: 8px !important;
         color: white !important;
         scroll-behavior: smooth;
       }

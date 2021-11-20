@@ -35,7 +35,7 @@ function Home(props) {
               <Stack direction="row" spacing={2}>
                 <Button
                   variant="contained"
-                  endIcon={<SendIcon />}
+                  endIcon={<SendIcon className="send_icon"/>}
                   href="https://api.whatsapp.com/send/?phone=919092744115&text&app_absent=0"
                   style={{ background: '#F75958' }}
                   target="__blank"
