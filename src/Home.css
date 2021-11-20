@@ -319,7 +319,7 @@ hr {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .download_cv > a {
@@ -362,8 +362,11 @@ hr {
 }
 
 
-/* only for 900px but can support mobile/tab devices too*/
-@media only screen and (max-width: 900px) {
+/* only for 1000px small screen laptops and tab devices too*/
+@media only screen and (max-width: 1000px) {
+  .home {
+    padding-top: 130px;
+  }
   .home-layout1 {
     display: block;
     width: 1200px;
@@ -536,5 +539,208 @@ hr {
     padding: 0;
     text-align: center;
     font-size: 2.5rem;
+  }
+}
+/* 480px it may support to mobile devices */
+@media screen and (max-width: 480px){
+  .home {
+    padding-top: 200px;
+  }
+  .home-layout1 {
+    display: block;
+    width: 1200px;
+    height: 1500px;
+    background-color: #fbfafa;
+  }
+  .content {
+    margin: 0 !important;
+    width: fit-content;
+    padding: 50px;
+  }
+
+  .content > #name {
+    color: #333;
+    font-size: 5.75rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 3.25rem;
+    margin-top: 0px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .content > #posting {
+    color: #f75958;
+    text-transform: capitalize;
+    font-size: 4.25rem;
+    font-weight: 600;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .content > #about-content {
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 250;
+    letter-spacing: 0;
+    line-height: 3.75rem;
+    font-size: 2.5rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  #message > a{
+    text-align: center !important;
+  }
+
+
+  .message_send {
+    width: 400px;
+    height: 80px;
+    font-size: 2rem !important;
+    margin: 0 auto !important;
+  }
+  .css-9tj150-MuiButton-endIcon>*:nth-of-type(1) {
+    font-size: 34px !important;
+  }
+
+  
+  /* new one doing */
+
+  .home-layout2 {
+    height: 4800px;
+    width: 1200px;
+    background-color: #f3f3f3;
+  }
+
+  .box-container1 {
+    height: 3000px;
+    display: block;
+    padding: 80px 100px 0 100px;
+  }
+
+  .social-media-image {
+    width: 41.66667%;
+  }
+  .image {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+
+  .social-media-image > img {
+    height: fit-content;
+    padding-left: 60px;
+  }
+
+  .personal-info {
+    padding: 20px 50px;
+  }
+
+  .about-me_subtitle {
+    color: #f75958;
+    font-size: 5rem;
+    line-height: 2.5rem;
+    margin: 0 0 20 px;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-me_title {
+    color: #333;
+    font-size: 5rem;
+    line-height: 2.375rem;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .personal-info > p {
+    /* color: #6e7373; */
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 4.75rem;
+    font-size: 2.5rem;
+    margin-left: 30px;
+    text-align: center;
+  }
+  hr {
+    width: 95%;
+  }
+
+  .about_me_contact_info {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_me_contact_info > div > span {
+    color: #333;
+    text-size-adjust: 100%;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+  .about_me_contact_info > div > p {
+    color: #333;
+    margin-top: 0;
+    line-height: 2.8;
+    font-size: 3rem;
+  }
+
+  .download_cv {
+    background-color: #f75958;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 3.4rem;
+  }
+
+  .download_cv > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .box-container2 {
+    height: 1800px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    border: 5 px solid #fff;
+    border-radius: 5px;
+    width: 80%;
+    height: 300px;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: auto 0;
+  }
+
+  #counter {
+    font-size: 6rem;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+  }
+  #counter-text {
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
   }
 }

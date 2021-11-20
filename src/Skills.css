@@ -80,8 +80,8 @@
   }
 }
 
-/* only for mobile devices */
-@media only screen and (max-width: 900px) {
+/* only 1000px for small screen laptops and tab devices  */
+@media only screen and (max-width: 1000px) {
 
   .skills {
     background-color: #fafafa;
@@ -132,5 +132,59 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       font-size: 2.2rem;
+  }
+}
+
+/* 480px it may support to mobile devices */
+@media screen and (max-width: 480px){
+  .skills {
+    background-color: #fafafa;
+    height: 1600px;
+    margin-top: 100px;
+    width: 1200px;
+  }
+  
+  .skills-content {
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .skills-content > p {
+    color: #333;
+    font-size: 75px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 5.125rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  .skills-content > h1 {
+    color: #f75958;
+    font-size: 90px;
+    line-height: 10rem;
+    margin-top: -15px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .progress {
+    display: block;
+  }
+
+  #progress-box1,#progress-box2{
+      width: 1000px;
+      margin: 0 auto;
+  }
+  
+  .MuiLinearProgress-bar{
+      background-color: #f75958 !important;
+  }
+  
+  #progress-box1,#progress-box2, h3{
+      color: #333;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 3.5rem;
   }
 }

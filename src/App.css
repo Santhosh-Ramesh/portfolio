@@ -45,8 +45,8 @@ html{
 }
 
 
- /* 900px it may support to mobile/tab devices */
-@media only screen and (max-width: 900px) {
+ /* 1000px for small screen laptops and tab devices */
+@media only screen and (max-width: 1000px) {
     .return_to_top{
         width: 80px;
         height: 80px;
@@ -55,6 +55,21 @@ html{
     .return_button{
         font-size: 3.4rem !important;
         padding-top: 10px !important;
+        color: white !important;
+        scroll-behavior: smooth;
+      }
+}
+
+/* 480px it may support to mobile devices */
+@media screen and (max-width: 480px){
+    .return_to_top{
+        width: 100px;
+        height: 100px;
+    }
+
+    .return_button{
+        font-size: 5.4rem !important;
+        padding-top: 6px !important;
         color: white !important;
         scroll-behavior: smooth;
       }

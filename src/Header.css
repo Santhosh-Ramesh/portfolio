@@ -143,12 +143,15 @@ a > p {
   
 }
 
-/* 900px it may support to mobile/tab devices */
-@media screen and (max-width: 900px){
+/* 1000px it may support to small screen laptop and tab devices */
+@media screen and (max-width: 1000px){
+  .logo>img{
+    width: 120px;
+  }
   .menu-icon{
     display: block;
     right: 0;
-    padding-right: 20px;
+    padding-right: 50px;
     padding-top: 20px;
   }
   .menu-icon .fa-times{
@@ -160,7 +163,9 @@ a > p {
     transform: rotate(180deg);
     transition: all 0.2s ease-in-out;
   }
- 
+  .menu-icon > i{
+    font-size: 70px !important;
+  }
   .menu-600{
     display: flex;
     justify-content: space-between;
@@ -193,8 +198,57 @@ a > p {
 }
 
 
-/* tablet devices
-@media screen and # Tablet
-only screen and (min-width: 768px)  {
-  
-} */
+/* 480px it may support to mobile devices */
+@media screen and (max-width: 480px){
+  .menu-icon{
+    display: block;
+    right: 0;
+    padding-right: 50px;
+    padding-top: 47px;
+  }
+  .menu-icon .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-icon .ham{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-icon > i{
+    font-size: 95px !important;
+  }
+ 
+  .menu-600{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .logo>img{
+    width: 180px;
+  }
+  .menu-list{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #fbfafa;
+    top: 180px;
+    transition: all 0.5s ease-in-out;
+    font-size: 2.3rem;
+  }
+  .header{
+    height: 200px;
+    display: block;
+  }
+  .menu-list.close{
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+  a > p {
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.8em;
+  }
+}
