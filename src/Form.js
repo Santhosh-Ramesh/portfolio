@@ -6,8 +6,13 @@ import './Form.css';
 import { toast } from 'react-toastify';
 // database
 // import { getDatabase, ref, set, get, child } from 'firebase/database';
-import { ref, set} from 'firebase/database';
+import { ref, set } from 'firebase/database';
 import { database } from './firebase-config';
+
+//email service
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init('user_dywJGJCqxjK62C4mz4WFX');
 
 function Form(props) {
   const initialState = {
@@ -21,8 +26,6 @@ function Form(props) {
 
   const { name, email, subject, message } = state;
 
-
-
   const handleInputChange = (event) => {
     console.log('event', event);
     const { name, value } = event.target;
@@ -31,33 +34,52 @@ function Form(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !email || !subject) {
+    console.log('state', state);
+    if (!name || !email || !subject || !message) {
       toast.error('Please fill the required fields');
     } else {
+      // email send code
+      var templateParams = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      };
+
+      emailjs.send('service_sl8kvm8', 'template_hcle8db', templateParams).then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+
+      //storing data in db
       const tid = Math.floor(Math.random() * 1000) + 1;
       set(ref(database, 'form_details/' + tid), {
         id: tid,
         name: name,
         email: email,
         subject: subject,
-        message: message
+        message: message,
       }).catch((err) => {
         toast.error(err);
       });
-      const popupmessage = "Your message has been sent successfully!"
+      const popupmessage = 'Your message has been sent successfully!';
 
       toast.success(popupmessage);
       setState({ ...initialState });
     }
   };
 
-
-
   return (
     <div className="contacts">
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">
+            Name<span>*</span>
+          </label>
           <input
             type="text"
             id="name"
@@ -68,7 +90,9 @@ function Form(props) {
           />
           <br />
           <br />
-          <label htmlFor="name">Email</label>
+          <label htmlFor="name">
+            Email<span>*</span>
+          </label>
           <input
             type="email"
             id="email"
@@ -79,7 +103,9 @@ function Form(props) {
           />
           <br />
           <br />
-          <label htmlFor="name">Subject</label>
+          <label htmlFor="name">
+            Subject<span>*</span>
+          </label>
           <input
             type="text"
             id="subject"
@@ -89,7 +115,9 @@ function Form(props) {
           />
           <br />
           <br />
-          <label htmlFor="name">Message</label>
+          <label htmlFor="name">
+            Message<span>*</span>
+          </label>
           <textarea
             type="text"
             id="message"
